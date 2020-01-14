@@ -27,9 +27,7 @@ export class ResponseDispacher {
     process.on(MESSAGE, (msg: ResponseMessage<any>) => {
       setImmediate(() => {
         if (typeof msg === 'object' && 'channel' in msg && 'id' in msg) {
-          setImmediate(() => {
-            this.event.emit(eventKey(msg.channel, msg.id), msg)
-          })
+          this.event.emit(eventKey(msg.channel, msg.id), msg)
         }
       })
     })

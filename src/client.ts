@@ -1,5 +1,5 @@
 import { Process } from './process'
-import { ResponseDispacher, ProcessClient } from './client_internal'
+import { ResponseDispacher, ProcessClient } from './client_impl'
 
 const responseDispachers = new WeakMap<Process, ResponseDispacher>()
 

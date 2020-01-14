@@ -6,7 +6,6 @@
   "engines": {
     "node": ">= 8.0.0"
   },
-  "private": true,
   "main": "lib/e7ipc-child-process",
   "module": "lib/e7ipc-child-process.mjs",
   "types": "lib/e7ipc-child-process.d.ts",

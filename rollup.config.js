@@ -8,7 +8,7 @@ export default {
     sourcemap: true,
     sourcemapExcludeSources: true,
   },
-  external: [],
+  external: ['child_process', 'events', '@yagisumi/e7ipc-types'],
 
   plugins: [
     typescript({

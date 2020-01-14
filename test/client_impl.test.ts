@@ -1,10 +1,10 @@
-import { getCounter, eventKey, wrapError } from '@/client_internal'
+import { getCounter, eventKey, wrapError } from '@/client_impl'
 
 function throwError() {
   throw new TypeError('error0')
 }
 
-describe('client_internal', () => {
+describe('client_impl', () => {
   test('getCounter', () => {
     const counter = getCounter()
     const n = counter()
